@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda dengan Responsive Voice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda dengan Responsive Voice</h1>
+        <form id="eventForm">
+            <input type="text" name="eventName" id="eventName" placeholder="Nama Acara" required>
+            <input type="text" name="eventkategori" id="eventkategori" placeholder="Nama Kategori" required>
+            <label for="eventkategori">Choose a category:</label>
+<select id="eventkategori" name="eventkategori">
+  <option value="">Nama Kategori</option>
+  <option value="agenda">Agenda</option>
+  <option value="ulang_tahun">Ulang Tahun</option>
+  
+</select>
+            <input type="datetime-local" name="eventDatetime" id="eventDatetime" required>
+            <button type="submit" class="btn">Tambah Acara</button>
+        </form>
+        <p id="status"></p>
+        <h2>Daftar Acara</h2>
+        <ul id="eventList"></ul>
+    </div>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=jQZ2zcdq"></script>
+    <script src="script.js"></script>
+</body>
+</html>

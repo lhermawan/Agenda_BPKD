@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda dengan Responsive Voice</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Agenda dengan Responsive Voice</h1>
+        <form id="eventForm">
+            <div class="form-group">
+                <input type="text" name="eventName" id="eventName" class="form-control" placeholder="Nama Acara" required>
+            </div>
+            <div class="form-group">
+                <label for="eventKategori">Choose a category:</label>
+                <select id="eventKategori" name="eventKategori" class="form-control">
+                    <option value="">Nama Kategori</option>
+                    <option value="agenda">Agenda</option>
+                    <option value="ulang_tahun">Ulang Tahun</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="datetime-local" name="eventDatetime" id="eventDatetime" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Tambah Acara</button>
+        </form>
+        <p id="status"></p>
+        <h2>Daftar Acara</h2>
+        <ul id="eventList"></ul>
+        <audio id="tingtung" src="audio/tingtung.mp3"></audio>
+    </div>
+    <!-- Add Bootstrap JS -->
+    
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=jQZ2zcdq"></script>
+    <script src="script.js"></script>
+</body>
+</html>
